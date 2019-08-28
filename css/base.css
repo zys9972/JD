@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after{
+    /*所有的标签和伪元素都选中*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*盒子模型的设定，padding，border不影响实际宽度，防止内容溢出*/
+    -webkit-box-sizing: border-box;/*兼容*/
+}
+body{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #333;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    /*针对textarea*/
+    resize: none;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.clearFix::before,
+.clearFix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+/*使用精灵图的公用样式*/
+[class^="icon-"],[class*=" icon-"]{
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}

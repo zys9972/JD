@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+}
+
+.full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.jd-search {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    background: url("../images/header-bg.png") 0 0 / 1px 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.jd-search a {
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+    background-origin: content-box;
+    background-clip: content-box;;
+}
+
+.jd-search .icon-back {
+    position: absolute;
+    left: 0;
+    background-position: -20px 0;
+}
+
+.jd-search form {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.jd-search form input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 7px;
+    padding: 0 10px;
+}
+
+.jd-search .icon-menu {
+    position: absolute;
+    right: 0;
+    background-position: -60px 0;
+}
+
+/*顶部通栏结束*/
+.classify {
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+}
+
+.classify-left {
+    width: 90px;
+    height: 100%;
+    /*background-color: #47ff50;*/
+    overflow: hidden;
+    float: left;
+}
+
+.classify-left ul {
+    width: 100%;
+}
+
+.classify-left ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f3f4f5;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+
+.classify-left ul li.now{
+    background-color: #fff;
+    border-right: none;
+}
+.classify-left ul li.now a{
+    color:#d8505c;
+}
+.classify-left ul li a {
+    width: 100%;
+    display: block;
+}
+
+.classify-right {
+    height: 100%;
+    overflow: hidden;/*左边已经设置好了，右边加上该属性即可达到互不影响，且自动缩放效果*/
+    /*background-color: yellow;*/
+}
+.classify-right-box{
+    width: 101%;
+    padding: 10px;
+}
+.classify-right .banner{
+    width: 100%;
+    display: block;
+}
+.classify-right .banner img{
+    width: 100%;
+    display: block;
+}
+.classify-right .classify-right-main{
+    width: 100%;
+}
+.classify-right .classify-right-main h3{
+    font-size: 15px;
+}
+.classify-right .classify-right-main ul{
+    width: 100%;
+}
+.classify-right .classify-right-main ul li{
+    width: 33.3333%;
+    float: left;
+    margin-top: 15px;
+}
+.classify-right .classify-right-main ul li a{
+    width: 100%;
+    display: block;
+}
+.classify-right .classify-right-main ul li a img{
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+}
+.classify-right .classify-right-main ul li a p{
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+}
